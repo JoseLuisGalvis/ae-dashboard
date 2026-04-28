@@ -1,0 +1,23 @@
+/* ═══════════════════════════════════════════════════════
+   custom.css — Animaciones hover para cards de gráficos
+   Dashboard Estratégico BNA TI 2026-2028
+   ═══════════════════════════════════════════════════════ */
+
+.card-chart {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background-color 0.22s ease;
+  will-change: transform;
+}
+
+.card-chart:hover {
+  transform: translateY(-6px); /* elevación */
+  background-color: rgba(
+    255,
+    122,
+    0,
+    0.06
+  ) !important; /* naranja 0.06 α — sutil */
+  box-shadow: 0 12px 28px rgba(0, 95, 135, 0.18) !important;
+}
