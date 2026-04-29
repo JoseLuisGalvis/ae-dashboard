@@ -1,0 +1,12 @@
+# Python compilado
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos temporales de Office
+.~lock.*
+*.tmp
+
+# Entornos virtuales (si usas)
+venv/
+.env

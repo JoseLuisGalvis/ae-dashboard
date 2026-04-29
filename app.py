@@ -379,7 +379,7 @@ def vista_detalle_kpi(kpi, pilar):
         ("Fuente",               kpi.get("fuente", "—")),
         ("Responsable",          kpi.get("responsable", "—")),
         ("Objetivo estratégico", oti_nombre),
-        ("Pilar",                pilar["nombre"]),
+        ("Área",                pilar["nombre"]),
     ]
 
     ficha = html.Div([
@@ -396,7 +396,7 @@ def vista_detalle_kpi(kpi, pilar):
 
     return html.Div([
         html.Div([
-            html.Span("← Volver al resumen del pilar", id="btn-volver", n_clicks=0, style={
+            html.Span("← Volver al resumen del Área", id="btn-volver", n_clicks=0, style={
                 "cursor": "pointer", "fontSize": "12px", "color": BNA_AZUL,
                 "fontWeight": "600", "padding": "4px 0",
             }),
